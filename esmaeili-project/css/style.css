@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 35px;
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+}
+body{
+    background-color: snow;
+}
+header{
+    text-align: center;
+    background-color: #c380ccc0;
+    background-size: cover;
+    height: auto;
+    color: midnightblue;
+}
+
+.mine{
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 57% 40%;
+    grid-template-rows: auto 15%;
+    grid-template-areas: 
+        "list mydiv"
+        "message message"
+    ;
+}
+.my-div{
+    grid-area: mydiv;
+    border: solid 1px #c670d1;
+    text-align: center;
+    background: #e49aee34;
+}
+.profile{
+    grid-area: picture;
+    border-radius: 50%;
+    border: solid 1px #c670d1;
+    margin: 5px auto;
+    width: 150px;
+    height: 150px;
+}
+img {
+    border-radius: 50%;
+    width: 100%;
+}
+.friend-list{
+    grid-area: list;
+    border: solid 1px #c670d1;
+    text-align: left;
+    background: #e49aee34;
+}
+.text{
+    grid-area: message;
+}
+
+.friend{
+    margin: 20px auto;
+    width: 90%;
+    border: solid 1px #c670d1;
+    background-color: #E8D8F4;
+    display: grid;
+    grid-template-columns: auto 45%;
+    grid-template-rows: 65% auto;
+    grid-template-areas: 
+        "textarea profile"
+        "button  profile"
+    ;
+    height: auto;
+}
+.friend-profile{
+    grid-area: profile;
+}
+.f-profile{
+    margin: 10px auto;
+    border-radius: 50%;
+    border: solid 1px #301b33;
+    width: 250px;
+    height: 250px;
+}
+.friend-content{
+    grid-area: textarea;
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+    font-size: large;
+    float: left;
+}
+.button{
+    grid-area: button;
+    margin: 10px auto;
+}
+button{
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-size: 20px;
+    background-color: transparent;
+    border: solid 1px #301b33;
+}
+.btn1:hover{
+    background-color: rgba(77, 228, 47, 0.5);
+ }
+ .btn2:hover{
+     background-color: rgba(212, 42, 42, 0.5);
+ } 
+
+ footer{
+    text-align: center;
+    background-color: #c380ccc0;
+    background-size: cover;
+    height: 70px;
+    color: midnightblue;
+}
+footer a {
+    padding: 0 10px;
+}
+
+ @media only screen and (max-width: 1100px) {
+    .f-profile{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+ @media only screen and (max-width: 800px) {
+    .f-profile{
+        width: 175px;
+        height: 175px;
+    }
+    .friend{
+        height: 70vh;
+    }
+    
+}
+@media only screen and (max-width: 640px) {
+    .f-profile{
+        width: 100px;
+        height: 100px;
+    }
+    .friend{
+        width: 100%;
+        height: 300px;
+        grid-template-rows: 50% auto;
+    }
+    .mine{
+        width: 100%;
+    }
+    *{
+        font-size: 14px;
+    }
+    .profile{
+        width: 110px;
+        height: 110px;
+    }
+    button{
+        margin: 5px 20px;
+        font-size: 14px;
+        padding: 5px;
+        
+    }
+}
