@@ -39,12 +39,12 @@ function funAccept() {
     let text = document.getElementById('friends');
     let name = friend.innerText.split('***');
     text.appendChild(addfriendlist(name[0]));
-    randomColor(); 
+    //randomColor(); 
     setTimeout(getdata(),500);
 } 
   
 function funDeny(){
-    randomColor(); 
+    //randomColor(); 
     setTimeout(getdata(),500);
 }
 
@@ -53,11 +53,11 @@ function addfriendlist(text) {
     li.textContent = text;
     return li;
 }
-
+/*
 function randomColor() {
     document.getElementById('friendDiv').style.background = 
     'rgba(' + Math.round(Math.random()*255) + ',' + 
     Math.round(Math.random()*255) + ',' + 
     Math.round(Math.random()*255) + ',0.5)';
 }
-
+*/
