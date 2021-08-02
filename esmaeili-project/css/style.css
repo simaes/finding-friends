@@ -13,10 +13,9 @@ body{
 }
 header{
     text-align: center;
-    background-color: #c380ccc0;
+    background-color: #92DDDC;
     background-size: cover;
     height: auto;
-    color: midnightblue;
 }
 
 .mine{
@@ -34,14 +33,13 @@ header{
 }
 .my-div{
     grid-area: mydiv;
-    border: solid 1px #c670d1;
+    border: solid 1px #2F9390;
     text-align: center;
-    background: #e49aee34;
 }
 .profile{
     grid-area: picture;
     border-radius: 50%;
-    border: solid 1px #c670d1;
+    border: solid 1px #2F9390;
     margin: 5px auto;
     width: 150px;
     height: 150px;
@@ -52,9 +50,8 @@ img {
 }
 .friend-list{
     grid-area: list;
-    border: solid 1px #c670d1;
+    border: solid 1px #2F9390;
     text-align: left;
-    background: #e49aee34;
 }
 .text{
     grid-area: message;
@@ -63,8 +60,7 @@ img {
 .friend{
     margin: 20px auto;
     width: 90%;
-    border: solid 1px #c670d1;
-    background-color: #E8D8F4;
+    border: solid 1px #2F9390;
     display: grid;
     grid-template-columns: auto 45%;
     grid-template-rows: 65% auto;
@@ -80,7 +76,7 @@ img {
 .f-profile{
     margin: 10px auto;
     border-radius: 50%;
-    border: solid 1px #301b33;
+    border: solid 1px #2F9390;
     width: 250px;
     height: 250px;
 }
@@ -102,7 +98,7 @@ button{
     margin: 0 20px;
     font-size: 20px;
     background-color: transparent;
-    border: solid 1px #301b33;
+    border: solid 1px #2F9390;
 }
 .btn1:hover{
     background-color: rgba(77, 228, 47, 0.5);
@@ -113,10 +109,9 @@ button{
 
  footer{
     text-align: center;
-    background-color: #c380ccc0;
+    background-color: #92DDDC;
     background-size: cover;
     height: 70px;
-    color: midnightblue;
 }
 footer a {
     padding: 0 10px;
@@ -163,7 +158,12 @@ footer a {
     button{
         margin: 5px 20px;
         font-size: 14px;
-        padding: 5px;
-        
+        padding: 5px;    
     }
+}
+
+@media only screen and (max-width: 450px) {
+*{
+    font-size: 13px;
+}
 }
