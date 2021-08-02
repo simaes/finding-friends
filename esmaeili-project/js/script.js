@@ -44,6 +44,7 @@ function funAccept() {
 } 
   
 function funDeny(){
+    randomColor(); 
     setTimeout(getdata(),500);
 }
 
