@@ -20,7 +20,7 @@ async function getdata() {
             let pic = data.avatar; 
             
             /* set friend content */
-            friend.innerText = 'Name : ' + firstname + ' ' + lastname +
+            friend.innerText = firstname + ' ' + lastname +
               ' *** Gender : ' + gender + 
             ' *** Email Address : ' + email ;
             
@@ -31,34 +31,17 @@ async function getdata() {
             /* set buttons */
            document.getElementById('button1').addEventListener('click', funAccept)
            document.getElementById('button2').addEventListener('click', funDeny)
-           
 
-             //console.log(firstname); 
-            /* 
-            this function is not working !!
-            function funAccept() {
-                let text = document.getElementById('friends');
-                text.appendChild(addfriendlist(firstname + '  ' + lastname));
-                firstname = '';
-                lastname = '';
-                randomColor(); 
-                getdata();
-            } 
-            */
-            return username;
-            
         });   
-        
-        return response;
 }
 
-const funAccept = async() => {
-    const u = await getdata();
-    console.log(u); 
+function funAccept() {
     let text = document.getElementById('friends');
-    text.appendChild(addfriendlist( u ));
-    randomColor();
-}; 
+    let name = friend.innerText.split('***');
+    text.appendChild(addfriendlist(name[0]));
+    randomColor(); 
+    setTimeout(getdata(),500);
+} 
   
 function funDeny(){
     setTimeout(getdata(),500);
